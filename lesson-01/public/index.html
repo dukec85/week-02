@@ -9,15 +9,15 @@
  <p>
    <nav class="top-nav">
      <ul class="nav-group">
-       <li class="nav-item nav-group__item--bordered">
+       <li class="nav-item nav-item__hoverable nav-group__item--bordered">
          <span class="nav-item__icon fa fa-home"></span>
          <span class="nav-item__text">Home</span>
        </li>
-       <li class="nav-item">
+       <li class="nav-item nav-item__hoverable">
          <span class="nav-item__icon fa fa-bolt"></span>
          <span class="nav-item__text">Moments</span>
        </li>
-       <li class="nav-item">
+       <li class="nav-item nav-item__hoverable">
          <span class="nav-item__icon fa fa-bell"></span>
          <span class="nav-item__text">Notifications</span>
        </li>
@@ -25,9 +25,14 @@
 
      <h1 class="nav-group">
        <span class="nav-logo fa fa-twitter"></span>
+
+       <div class="nav-control">
+         <label for="nav-toggle">
+            <span class="fa fa-bars"></div
      </h1>
 
      <ul class="nav-group">
+       <input type="checkbox" name="nav-toggle" id="nav-toggle">
        <li class="nav-item">
          <div class="nav-input">
            <input type="text" placeholder="search">
@@ -44,6 +49,9 @@
          </a>
        </li>
      </ul>
+
+
+     </div>
    </nav>
  </p>
 
