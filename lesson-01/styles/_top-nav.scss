@@ -1,0 +1,60 @@
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $brand-brite-white;
+  padding: 0 $gutter * 2;
+}
+
+.top-nav > {
+  //*background: black;
+}
+
+.nav-group {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &__item {
+    padding: $gutter *2;
+
+    &--bordered {
+      border-bottom: 0.2rem solid $brand_primary;
+    }
+  }
+}
+
+.nav-logo {
+  color: $brand-primary;
+}
+
+.nav-avatar {
+  vertical-align: middle;
+  height: 1.2em;
+  border-radius: 0.4rem;
+}
+
+.nav-item {
+  padding: $gutter;
+  text-align: center;
+
+  &--bordered {
+    border-bottom: 0.2rem solid $brand-primary;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .nav-item {
+    &__text {
+      display: none;
+    }
+
+    &__icon {
+      margin: 0 $gutter / 2;
+    }
+  }
+}
+
+.nav-logo {
+  display: none;
+}
